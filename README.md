@@ -16,8 +16,8 @@ Following command will dump the whole database with out including auth.permissio
 - python manage.py dumpdata --exclude auth.permission > db.json
 
 # dumpdata (--indent)
-# By default, dumpdata will output all data on a single line. It isn’t easy for humans to read
-# You can use the --indent option to pretty-print the output with a number of indentation spaces
+By default, dumpdata will output all data on a single line. It isn’t easy for humans to read
+You can use the --indent option to pretty-print the output with a number of indentation spaces
 - python manage.py dumpdata auth.user --indent 2 > user.json
 
 # dumpdata (--format)
