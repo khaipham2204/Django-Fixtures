@@ -11,8 +11,8 @@
 - python manage.py dumpdata auth.permission > permission.json
 
 # dumpdata (--exclude)
-# You can use --exclude option to specify apps/tables which don't need being dumped
-# Following command will dump the whole database with out including auth.permission table content
+You can use --exclude option to specify apps/tables which don't need being dumped
+Following command will dump the whole database with out including auth.permission table content
 - python manage.py dumpdata --exclude auth.permission > db.json
 
 # dumpdata (--indent)
@@ -24,8 +24,8 @@
 - python manage.py dumpdata auth.user --indent 2 --format xml > user.xml
 
 # loaddata command - This command can be use to load the fixtures(database dumps) into database
-# Problems: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
-# Solutions:
+Problems: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+Solutions:
 - Open the file in regular notepad
 - Select save as
 - Select encoding "UTF-8"
