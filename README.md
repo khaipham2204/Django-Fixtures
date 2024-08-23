@@ -34,11 +34,11 @@ Solutions:
 - python manage.py loaddata user.json
 
 # Restore fresh database
-- When you backup whole database by using dumpdata command, it will backup all the database tables
-- If you use this database dump to load the fresh database(in another django project), it can be causes IntegrityError (If you loaddata in same database it works fine)
-- To fix this problem, make sure to backup the database by excluding contenttypes and auth.permissions tables
+When you backup whole database by using dumpdata command, it will backup all the database tables
+If you use this database dump to load the fresh database(in another django project), it can be causes IntegrityError (If you loaddata in same database it works fine)
+To fix this problem, make sure to backup the database by excluding contenttypes and auth.permissions tables
 
-python manage.py dumpdata --indent 2  --exclude auth.permission --exclude contenttypes > db.json
+- python manage.py dumpdata --indent 2  --exclude auth.permission --exclude contenttypes > db.json
 
 
 
