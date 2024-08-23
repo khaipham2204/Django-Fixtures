@@ -1,3 +1,5 @@
+# Reference: https://docs.djangoproject.com/en/5.1/howto/initial-data/
+
 # dumpdata command
 - It is a django management command, which can be use to backup(export) you model instances or whole database
 
